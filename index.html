@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/login.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Document</title>
+</head>
+
+<body class="center">
+	<main>
+		<section>
+			<div id="appTitle">
+				<h2>App de notas</h2>
+				<i class="fa fa-folder-open-o" id="folderIcon" aria-hidden="true"
+					style="color:#3ecf8e; font-size: 24px">
+				</i>
+			</div>
+		</section>
+		<section>
+			<div>
+				<label for="nameInput">Nombre Alumno:</label>
+				<span class="symbol">*</span>
+				<input type="text" name="fullName" id="nameInput" required>
+			</div>
+		</section>
+		<section>
+			<div>
+				<label for="notaEj">Nota Ejercicios:</label>
+				<span class="symbol" id="symbolNotas">*</span>
+				<input type="number" id="notaEj" required>
+			</div>
+		</section>
+
+		<section>
+			<div>
+				<label for="examenTeorico">Examen Teorico:</label>
+				<span class="symbol">*</span>
+				<input type="number" name="examenTeorico" id="examenTeorico" required maxlength="9" minlength="9">
+			</div>
+		</section>
+
+		<section>
+			<div>
+				<label for="examenPrac">Examen Practico:</label>
+				<span class="symbol">*</span>
+				<input type="number" name="examenPrac" id="examenPrac" required maxlength="9" minlength="9">
+			</div>
+		</section>
+
+		<section>
+			<div>
+				<label for="notaProyecto">Nota Proyecto:</label>
+				<span class="symbol" id="symbolNotaPro">*</span>
+				<input type="number" name="notaProyecto" id="notaProyecto" required maxlength="9" minlength="9">
+			</div>
+		</section>
+
+		<section>
+			<button id="calcular" onclick="mostrarCaja()">Calcular</button>
+			<button id="delete">Borrar</button>
+		</section>
+	</main>
+
+	<footer>
+		<p>Desarrollado por Alberto Guzman Moreno &nbsp;&copy; &nbsp;2024.</p>
+	</footer>
+
+	<script>
+		function mostrarCaja() {
+			alert("Hola");
+		}
+	</script>
+</body>
+
+</html>
