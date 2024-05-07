@@ -126,7 +126,8 @@ h2 {
 .cajaNota {
 	background-color: #232323;
 	border: 1.5px #3ecf8e solid;
-	border-radius: 20px;
+	border-radius: 7px;
+	padding: 10px;
 }
 
 @media (max-width: 700px) {
