@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="styles/login.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Document</title>
-	<script src="js/index.js"></script>
+
 </head>
 
 <body class="center">
@@ -31,7 +31,7 @@
 			<div>
 				<label for="notaEj">Nota Ejercicios:</label>
 				<span class="symbol" id="symbolNotas">*</span>
-				<input type="number" id="notaEj" required>
+				<input type="number" id="notaEj" min="0" max="10" required>
 			</div>
 		</section>
 
@@ -39,7 +39,7 @@
 			<div>
 				<label for="examenTeorico">Examen Teorico:</label>
 				<span class="symbol">*</span>
-				<input type="number" name="examenTeorico" id="examenTeorico" required maxlength="9" minlength="9">
+				<input type="number" name="examenTeorico" id="examenTeorico" min="0" max="10">
 			</div>
 		</section>
 
@@ -47,7 +47,7 @@
 			<div>
 				<label for="examenPrac">Examen Practico:</label>
 				<span class="symbol">*</span>
-				<input type="number" name="examenPrac" id="examenPrac" required maxlength="9" minlength="9">
+				<input type="number" name="examenPrac" id="examenPrac" min="0" max="10">
 			</div>
 		</section>
 
@@ -55,7 +55,7 @@
 			<div>
 				<label for="notaProyecto">Nota Proyecto:</label>
 				<span class="symbol" id="symbolNotaPro">*</span>
-				<input type="number" name="notaProyecto" id="notaProyecto" required maxlength="9" minlength="9">
+				<input type="number" name="notaProyecto" id="notaProyecto" min="0" max="10">
 			</div>
 		</section>
 
@@ -69,6 +69,7 @@
 		<p>Desarrollado por Alberto Guzman Moreno &nbsp;&copy; &nbsp;2024.</p>
 	</footer>
 
+	<script src="js/index.js"></script>
 </body>
 
 </html>

@@ -100,7 +100,9 @@ h2 {
 	cursor: pointer;
 }
 
-/* #calcular:hover {} */
+footer>p {
+	font-size: 25px;
+}
 
 #delete {
 	margin-left: 10px;
@@ -132,7 +134,7 @@ h2 {
 }
 
 .aprobado {
-	background-color: #61ba92;
+	background-color: #3ecf8e;
 	font-size: 20px;
 }
 
@@ -142,8 +144,25 @@ h2 {
 	font-size: 20px;
 }
 
-@media (max-width: 700px) {
-	main {
-		width: 90%;
-	}
+input[type="text"].errInput,
+input[type="number"].errInput:out-of-range {
+	border-color: #832026;
+	background-color: #ef5d62;
+	color: white;
+
+	transition: border-color 0.5 ease;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+textarea:focus,
+input:focus,
+input[type]:focus {
+	border-color: #a6eacb;
+	box-shadow: 0 1px 1px rgba(169, 255, 159, 0.075)inset, 0 0 8px rgba(129, 236, 170, 0.6);
+	outline: 0 none;
 }
